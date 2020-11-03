@@ -1,0 +1,339 @@
+/*top menu bar*/
+
+.top {
+    background-color: lightskyblue;
+    padding: 10px 0px 10px;
+    text-align: center;
+    opacity: 85%;
+    transition-duration: 0.3s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: block;
+}
+
+.top:hover {
+    opacity: 100%;
+    padding: 20px 0px 20px;
+}
+
+.menubutton {
+    vertical-align: top;
+    transition-duration: 0.3s;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    width: 10%;
+}
+
+.menubutton:hover {
+    background-color: rgb(16, 47, 151);
+    color: white
+}
+
+.menuImage {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    vertical-align: top;
+    padding-right: 30px;
+    padding-left: 20px;
+    border: 0;
+}
+
+
+/*front page*/
+
+.title {
+    overflow: auto;
+    height: 100vh;
+    max-height: 1200px;
+    background-image: url(images/CSHS.png);
+    background-size: 50%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title-element {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.t-text {
+    z-index: -1;
+    margin-left: 10%;
+    margin-right: 0px;
+    margin-top: 10%;
+    color: lightskyblue;
+    font-size: 5vw;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+    position: fixed;
+}
+
+
+/*general body*/
+
+.image {
+    width: 180px;
+    height: 100px;
+    margin: auto;
+}
+
+.frame {
+    background-color: rgb(240, 240, 240);
+    padding: 20px 0px 25px;
+    width: 100%;
+    margin: 0px;
+}
+
+.button {
+    border: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid-frame {
+    margin: 0;
+    display: grid;
+    align-items: center;
+    padding: 0;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.footer {
+    background-color: rgb(184, 228, 255);
+    display: grid;
+    grid: 300px / auto auto auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.footer-element {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.footer-link {
+    display: block;
+    text-decoration: none;
+    color: black
+}
+
+.footer-link:hover {
+    text-decoration: underline black;
+}
+
+.submit-btn-frame {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.body-text {
+    color: black;
+    font-size: 2vw;
+    margin-left: 25%;
+    margin-right: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: 40%;
+}
+
+.info-text{
+    width: 65%;
+}
+
+/*Specific section elements*/
+
+
+.header {
+    margin-left: 25%;
+    text-align: left;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-tile {
+    height: 30vw;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.tile-btn {
+    border-radius: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 85%;
+    transition-duration: 0.2s
+}
+
+.buttons-frame {
+    display: grid;
+    grid-template-areas: 'hours faq' 'exec exec';
+}
+
+.hours {
+    grid-area: hours;
+}
+
+.hours-btn {
+    background-image: url(images/serviceHours3.png);
+}
+
+.hours-btn:hover {
+    background-color: aliceblue;
+    background-size: 95%;
+}
+
+.faq {
+    grid-area: faq;
+}
+
+.faq-btn {
+    background-image: url(images/FAQbg3.png);
+}
+
+.faq-btn:hover {
+    background-color: aliceblue;
+    background-size: 95%;
+}
+
+.exec {
+    grid-area: exec;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+
+.exec-btn {
+    background-image: url(images/execs.png);
+}
+
+.exec-btn:hover {
+    background-color: aliceblue;
+    background-size: 95%;
+}
+
+.side-image {
+    width: 100%;
+    vertical-align: top;
+    grid-area: image;
+}
+
+.what-we-do {
+    background-image: url(images/circuitBoard3.png);
+    transition-duration: 0.5s;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 650px 750px;
+}
+
+.grid-right {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.grid-left {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.template-frame {
+    background-color: rgb(182, 206, 221);
+}
+
+.service-frame {
+    background-image: url(images/serviceChart.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-color: rgb(118, 204, 208); */
+    height: 30vw;
+    grid: auto / auto auto;
+}
+
+.service-template {
+    color: blue;
+}
+
+.bio {
+    display: grid;
+    grid: auto / 50% 50%;
+    overflow: hidden;
+    padding: 30px 0px 30px 0px;
+}
+
+.bio-image-frame {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bio-image {
+    width: 70%;
+    height: 100%;
+}
+
+.submission {
+    font-size: larger;
+    width: 70%;
+}
+
+.submit-frame {
+    margin: 0 10%;
+    grid: auto auto / auto auto;
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.submit-btn {
+    transition-duration: 0.3s;
+    border: 2px solid lightskyblue;
+}
+
+.submit-btn:hover {
+    color: white;
+    background-color: lightskyblue;
+}
+
+.competitions {
+    grid: 'text text text image image'
+}
+
+#intro-text{
+    width: 30%;
+}
+
+#president {
+    background-color: aliceblue;
+}
+
+#vp {
+    background-color: rgb(240, 240, 240);
+}
+
+#secretary {
+    background-color: aliceblue;
+}
+
+#treasurer {
+    background-color: rgb(240, 240, 240);
+}
